@@ -1,0 +1,11 @@
+#footer {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background: $bg_3;
+
+    .footer_text {
+        p {
+            @include fonts_d(#cacaca, 14px, 400, $roboto);
+        }
+    }
+}

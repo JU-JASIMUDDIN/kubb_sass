@@ -1,0 +1,67 @@
+#contact {
+    padding-top: 65px;
+    padding-bottom: 50px;
+    background: $bg_2;
+
+    .cont_item {
+        .cont_head {
+            padding-bottom: 20px;
+
+            h4 {
+                @include fonts_d(#f0f0f0, 16px, 700, $robo_cond);
+                text-transform: uppercase;
+            }
+        }
+
+        .cont_para {
+            padding-bottom: 20px;
+
+            p {
+                @include fonts_d(#cacaca, 14px, 400, $roboto);
+                line-height: 24px;
+            }
+        }
+
+        .cont_itext {
+            .location {
+                a {
+                    i {
+                        @include fonts_d(#cacaca, 15px, 0, 0);
+
+                    }
+                }
+            }
+
+            .location_txt {
+                a {
+                    @include fonts_d(#cacaca, 14px, 400, $roboto);
+                }
+            }
+
+        }
+    }
+
+    .twiter {
+        .twit_para {
+            .mid_para {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+    .popular {
+        padding-bottom: 15px !important;
+
+        h4 {
+            padding-top: 5px;
+            @include fonts_d(#929292, 12px, 400, $roboto);
+        }
+    }
+
+    .about_para {
+        .mid_about {
+            padding-top: 25px;
+        }
+    }
+}

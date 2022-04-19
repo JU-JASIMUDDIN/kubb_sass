@@ -1,0 +1,55 @@
+#about{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: $bg_1;
+
+    // about head start =====
+    .about_head{
+        h4{
+            @include fonts_d($fcolor_2,30px,300,$robo_slab);
+        }
+        p{
+            padding-top: 25px;
+            padding-bottom: 80px;
+            @include fonts_d(#666,14px,400,$roboto); 
+        }
+    }
+    // about head end =====
+    // about images head text start =====
+    .about_img_head{
+        text-align: center;
+        h4{
+            padding-bottom: 30px;
+            @include fonts_d(#444,18px,700,$robo_cond); 
+            text-transform: uppercase;
+        }
+    }
+    // about images head text end =====
+    // about images part start =====
+    .img_part{
+        .landscape{
+            padding: 15px;
+            background:$pcolor;
+            border: 1px solid #e3e3e3;
+            transition: all linear .4s;
+            &:hover{
+                box-shadow: 0px 0px 4px 2px rgba(102, 102, 102, 0.796);
+            }
+            .land_text{
+                h4{
+                    padding-top: 25px;
+                    padding-bottom: 10px;
+                    @include fonts_d(#444,17px,700,$robo_slab); 
+                    text-transform: uppercase;
+                }
+                 p{
+                    @include fonts_d(#666,14px,400,$roboto); 
+                    line-height: 22px;
+                } 
+            }
+        }
+    }
+    // about images part end   =====
+
+    
+}

@@ -1,0 +1,24 @@
+#banner{
+    padding-top: 330px;
+    padding-bottom: 250px;
+   background:url(../images/banner.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   .bannet_text{
+       h3{
+           @include font_ban();
+       }
+       h4{
+           @include font_ban2();
+           letter-spacing: 4px;
+           padding: 20px 0px;
+       }
+       p{
+        @include font_ban3();
+        
+       }
+     
+       
+   }
+}

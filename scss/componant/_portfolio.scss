@@ -1,0 +1,89 @@
+#portfolio {
+    background: $bg_1;
+    padding-bottom: 80px;
+
+    // left head text part start
+    .port_htext {
+        padding-bottom: 25px;
+
+        h3 {
+            position: relative;
+            @include fonts_d($fcolor_2, 18px, 700, $robo_cond);
+            text-transform: uppercase;
+
+            &::after {
+                position: absolute;
+                content: '';
+                background: $bg_5;
+                top: 50%;
+                left: 30%;
+                height: 1px;
+                width: 100px;
+            }
+        }
+    }
+
+    // left head text part end
+
+    // right head text part start
+    .right_text {
+        padding-bottom: 30px;
+
+        h3 {
+            &::after {
+                position: absolute;
+                content: '';
+                background: $bg_5;
+                top: 50%;
+                left: 21%;
+                height: 1px;
+                width: 100px;
+            }
+
+        }
+    }
+
+    // right head text part end
+    // portfolio about left text start 
+    .port_img {
+        padding-top: 8px;
+    }
+
+    .prot_rtext {
+        h4 {
+            @include fonts_d($fcolor_4, 18px, 300, $roboto);
+            line-height: 26px;
+            padding-bottom: 8px;
+        }
+
+        p {
+            @include fonts_d($fcolor_4, 14px, 400, $roboto);
+            line-height: 22px;
+
+        }
+    }
+
+    // portfolio about left text end 
+    // portfolio service part right text start
+    .port_ser_text {
+        padding-bottom: 20px;
+        .service_text {
+            h4 {
+                @include fonts_d($fcolor_2, 17px, 700, $robo_slab);
+                padding-bottom: 15px;
+            }
+            p{
+                @include fonts_d($fcolor_4, 14px, 400, $roboto);
+                line-height: 22px;
+            }
+        }
+    }
+
+    // portfolio service part right text end 
+
+
+
+
+
+
+}

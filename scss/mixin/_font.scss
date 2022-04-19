@@ -1,0 +1,38 @@
+@mixin fonts_d($fc, $fs, $fw, $ff) {
+    color: $fc;
+    font-size: $fs;
+    font-weight: $fw;
+    font-family: $ff;
+}
+
+@mixin font_nav() {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: $roboto;
+}
+
+@mixin font_ban() {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: $robo_cond;
+}
+
+@mixin font_ban2() {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-family: $robo_slab;
+}
+
+@mixin font_ban3() {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: capitalize;
+    font-family: $robo_slab;
+}

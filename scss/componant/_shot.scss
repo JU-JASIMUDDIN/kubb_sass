@@ -1,0 +1,50 @@
+#shot{
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: $bg_4;
+
+    // instagram part start ======
+    .insta_text{
+        padding-bottom: 45px;
+        p{
+            position: relative;
+           @include fonts_d($fcolor_3,18px,700,$robo_cond); 
+           text-transform: uppercase;
+           &::after{
+               content: '';
+               position: absolute;
+               width: 100px;
+               height: 2px;
+               background: #535353;
+               left: 150px;
+               top: 50%;
+           }
+           &::before{
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 2px;
+            background: #535353;
+            right: 150px;
+            top: 50%;
+        }
+        }
+    }
+    // instagram part end ======
+    // instagram btn start ======
+    .insta_btn{
+        padding-top: 60px;
+        a{
+            border: 1px solid #797979;
+            padding:15px 20px;
+            @include fonts_d(#a6a6a6,14px,400,$roboto);
+            text-transform: uppercase;
+            i{
+                margin-right: 7px;
+                font-size: 15px;
+            }
+        }
+    }
+    // instagram btn end ======
+}

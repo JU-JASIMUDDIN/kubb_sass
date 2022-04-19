@@ -1,0 +1,35 @@
+.navbar{
+    background: rgba(0, 0, 0, 0.45);
+    line-height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    .navbar-nav{
+        .nav-item{
+            padding-left: 20px;
+            padding-right: 0px;
+            display: inline-block;
+            .nav-link{
+                @include font_nav();
+                transition: all linear .4s;
+                &:hover{
+                    color: $fhover;
+                }
+            }
+          
+        }
+    }
+    @keyframes menu{
+        from{
+            top: -100px;}
+        to{
+            top: 0px;}
+    }
+}
+.bg{
+    background: rgba(0, 0, 0, 0.85);
+    animation: menu 2s;
+}
+

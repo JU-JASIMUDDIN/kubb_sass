@@ -1,0 +1,106 @@
+#journal {
+    background: $bg_1;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    // journal head text start =====
+    .journal_head {
+        .journal_head_text {
+            padding-bottom: 30px;
+
+            p {
+                position: relative;
+                @include fonts_d($fcolor_2, 18px, 700, $robo_cond);
+                text-transform: uppercase;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100px;
+                    height: 1px;
+                    background: #535353;
+                    left: 175px;
+                    top: 50%;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 100px;
+                    height: 1px;
+                    background: #535353;
+                    right: 175px;
+                    top: 50%;
+                }
+            }
+        }
+    }
+
+    // journal head text end =====
+    // journal_img_part start =====
+    .journal_img_part {
+        .journal_img_item {
+            background: $pcolor;
+            border: 1px solid #e3e3e3;
+            padding: 25px 0;
+
+            // jour_img_htext start 
+            .jour_img_htext {
+                h4 {
+                    @include fonts_d($fcolor_2, 16px, 700, $robo_slab);
+                    text-transform: capitalize;
+                    padding-bottom: 13px;
+                }
+
+                p {
+                    @include fonts_d(#999999, 12px, 400, $roboto);
+                    padding-bottom: 20px;
+                }
+            }
+
+            // jour_img_htext start 
+            // jour_btm_text start 
+            .jour_btm_text {
+                padding: 25px 20px;
+
+                p {
+                    @include fonts_d(#666, 14px, 400, $roboto);
+                    line-height: 22px;
+
+                }
+            }
+
+            // jour_btm_text end 
+            // jour_icon start
+            .jour_icon {
+                padding: 0 20px;
+
+                .jour_left {
+                    border-bottom: 1px solid #28b8d8;
+
+                    a {
+                        @include fonts_d(#999, 11px, 400, $roboto);
+                        text-transform: uppercase;
+                    }
+                }
+
+                .jour_ritht {
+                    margin-left: 173px;
+
+                    h5 {
+                        @include fonts_d(#999, 11px, 400, $roboto);
+                    }
+
+                    i {
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            // jour_icon end 
+        }
+
+    }
+
+    // journal_img_part start =====
+}
